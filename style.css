@@ -25,10 +25,10 @@
 }
 
 .welcome-slider-content img{
-    width: 100%;
     border-bottom-left-radius: .6rem;
     border-bottom-right-radius: .6rem;
 }
+
 
 .welcome-slider-text-content{
     display: flex;
