@@ -9,7 +9,6 @@
 .welcome-slider{
     height: 100vh;
     background-color: #1e232e;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -65,4 +64,6 @@
 
 .swiper{
     width: 57rem;
+    /* top: 160px; */
 }
+
