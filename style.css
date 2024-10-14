@@ -4,10 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins";
-    /* color: #fff; */
 }
+
 .welcome-slider{
-    height: 100vh;
     background-color: #1e232e;
     justify-content: center;
     align-items: center;
@@ -64,6 +63,62 @@
 
 .swiper{
     width: 57rem;
-    /* top: 160px; */
+}
+
+
+
+/*------------------------ Media Query ------------------------ */
+
+@media screen and ( width < 933px) {
+    .swiper{
+        width: 52.5rem;
+    }
+
+    .welcome-slider .welcome-slider-content{
+        width: 23rem;
+    }
+}
+
+@media screen and ( width < 862px) {
+    .swiper{
+        width: 45.5rem;
+    }
+
+    .welcome-slider .welcome-slider-content{
+        width: 20rem;
+    }
+}
+
+@media screen and ( width < 750px) {
+    .swiper{
+        width: 25rem;
+    }
+    .welcome-slider .welcome-slider-content{
+        width: 25rem;
+    }
+}
+
+@media screen and ( width < 423px) {
+    .swiper{
+        width: 21rem;
+    }
+    .welcome-slider .welcome-slider-content{
+        width: 21rem;
+    }
+    .welcome-slider-text-content p{
+        padding: 3px;
+    }
+}
+
+@media screen and ( width < 400px) {
+    .swiper{
+        width: 18rem;
+    }
+    .welcome-slider .welcome-slider-content{
+        width: 18rem;
+    }
+    .welcome-slider-text-content p{
+        padding: 3px;
+    }
 }
 

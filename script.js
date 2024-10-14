@@ -31,35 +31,10 @@ document.addEventListener("DOMContentLoaded", function() {
   // Initialize Swiper
   initSwiper();
 
-  const accordionBtn = document.querySelector(".accordion-button");
-  const accordionBody = document.querySelector("#collapseOne");
-
   // Function to check if an element is visible
   function isVisible(elem) {
     return !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);
   }
-
-  accordionBtn.addEventListener("click", function() {
-    // Use MutationObserver to detect when the accordion animation is complete
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-          if (isVisible(accordionBody)) {
-            setTimeout(() => {
-              initSwiper();
-            }, 50);
-          } else {
-            if (swiper) {
-              swiper.destroy(true, true);
-            }
-          }
-          observer.disconnect();
-        }
-      });
-    });
-
-    observer.observe(accordionBody, { attributes: true });
-  });
 
   // Reinitialize Swiper on window resize
   let resizeTimer;
